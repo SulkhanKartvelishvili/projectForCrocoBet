@@ -1,0 +1,9 @@
+
+<h2>Users's posts</h2>
+
+  <div class="postsContainer">
+    <div class="postCard" *ngFor="let post of usersPostsList">
+      <h3>{{post.title}}</h3>
+      <p>{{post.body}}</p>
+    </div>
+  </div>

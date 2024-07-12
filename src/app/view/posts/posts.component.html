@@ -1,0 +1,27 @@
+<h2>Posts Table</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Author Name</th>
+      <th>Post Title</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let post of postsList" >
+      <td>
+        <ng-container *ngFor="let user of usersList">
+          <span *ngIf="user.id === post.userId">{{ user.name }}</span>
+        </ng-container>
+      </td>
+      <td>{{ post.title }}</td>
+      <td>
+        <button (click)="openPostDetails(post)" class="postsBtn">Show Details</button>
+      </td>
+    </tr>
+    <app-post-details *ngIf="isModalOpen" [post]="selectedPost" (closeModal)="closeModal()"></app-post-details>
+  
+
+  </tbody>
+</table>
+

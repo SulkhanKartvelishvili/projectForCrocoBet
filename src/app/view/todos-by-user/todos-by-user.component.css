@@ -1,0 +1,80 @@
+.todoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .todoDiv h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+
+  .todoList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .todoList li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+ 
+  .todoList li.completed {
+    background: #90cb90;
+    color: black;
+  }
+  
+  
+
+  @media (max-width: 1024px) {
+    .todoDiv {
+      width: 80%;
+    }
+  
+    .todoDiv h2 {
+      font-size: 20px;
+    }
+  
+    .todoList li {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .todoDiv{
+      width: 90%;
+    }
+  
+    .todoDiv h2 {
+      font-size: 19px;
+    }
+  
+    .todoList li {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .todoDiv {
+      width: 95%;
+    }
+  
+    .todoDiv h2 {
+      font-size: 18px;
+    }
+  
+    .todoList li {
+      font-size: 12px;
+    }
+  }

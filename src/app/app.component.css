@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body {
+ 
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .mainContent {
+    font-family: Helvetica;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+    padding:0px;
+  }
+  
+  .contentWrapper {
+    width: 50%;
+    max-width: 1024px;
+    margin:0px;
+    padding:0px;
+  }
+  @media (max-width: 1024px) {
+    .contentWrapper {
+      width: 80%;
+    }
+  }
+ 
+
